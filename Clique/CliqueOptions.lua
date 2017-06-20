@@ -74,7 +74,7 @@ function Clique:SpellButton_OnClick()
 end
 
 StaticPopupDialogs["CLIQUE_AUTO_SELF_CAST"] = {
-	text = "Clique will not work properly with Blizzard's AutoSelfCast.  Please disable it.",
+	text = auto_cast,
 	button1 = TEXT(OKAY),
 	OnAccept = function()
 	end,
@@ -415,11 +415,11 @@ function Clique:SetTutorial(screen)
 	local message = ""
 	
 	if screen == "MAIN" then
-		message = "Using Clique is very simple.  Find a spell in the spellbook to the left, and then click on it.  When clicking you can hold any number of modifiers (Alt, Control and Shift) and you can use any button on your mouse (Left, Right, Middle, Button4 and Button5.)  This will add a spell to the list above.\n\nYou can also use the \"New\" button to add a custom lua script."
+		message = Tutorialscreen1
 	elseif screen == "SELECTED" then
-		message = "You have selected a spell or custom script.  If this is a spell (from the spellbook) and you'd like to always cast the highest rank, click the \"Max\" button.\n\nYou can also use the \"Edit\" button to change the binding of a spell, or the name/lua code of a custom script."
+		message = Tutorialscreen2
 	elseif screen == "EDIT" then
-		message = "You are in the edit screen.  You can re-bind this cast by clicking the button above.  In custom scripts, you can use Clique.unit to refer to the unit we're clicking on.\n\nYou may also right-click in the edit box to pop up a list of custom functions that are available to you.  See the documentation for more details."
+		message = Tutorialscreen3
 	end
 
 	CliqueTutorialText:SetText(message)
@@ -498,7 +498,7 @@ end
 
 local function DewDropMenu()
        dewdrop:AddLine(
-           'text', "Custom Functions",
+           'text', custom_functions,
            'isTitle', true)
 
     for k,v in ipairs(Clique.CustomFunctions) do  
@@ -519,7 +519,7 @@ function Clique:DropMenu(frame)
 end
 
 StaticPopupDialogs["CLIQUE_PASSIVE_SKILL"] = {
-	text = "You can't bind a passive skill.",
+	text = passive_skill,
 	button1 = TEXT(OKAY),
 	OnAccept = function()
 	end,
@@ -528,7 +528,7 @@ StaticPopupDialogs["CLIQUE_PASSIVE_SKILL"] = {
 }
 
 StaticPopupDialogs["CLIQUE_BINDING_PROBLEM"] = {
-	text = "That combination is already bound.  Delete the old one before trying to re-bind.",
+	text = combination,
 	button1 = TEXT(OKAY),
 	OnAccept = function()
 	end,
@@ -537,7 +537,7 @@ StaticPopupDialogs["CLIQUE_BINDING_PROBLEM"] = {
 };
 
 StaticPopupDialogs["CLIQUE_AUTOSELFCAST"] = {
-	text = "Clique will not work properly if Blizzard's AutoSelfCast is enabled.  Please disable it under the Interface Options.",
+	text = autoselfcast,
 	button1 = TEXT(OKAY),
 	OnAccept = function()
 	end,

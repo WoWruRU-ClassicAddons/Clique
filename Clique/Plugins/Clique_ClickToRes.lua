@@ -16,7 +16,7 @@ Plugin.fullname = "Click-to-resurrect"
 -- Plugin:Test() is called anytime the mod tries to enable.  It is optional
 -- but it will be checked if it exists.  Will typically be based off some global
 -- or the state of the addon itself.
-local DEAD_UNIT = "Click on Dead Unit"
+local DEAD_UNIT = "Мертвая единица"
 
 function Plugin:Test()
 	local _,class = UnitClass("player")

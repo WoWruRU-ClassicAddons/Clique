@@ -17,6 +17,9 @@ Plugin.fullname = "Out of Combat Clicks"
 -- but it will be checked if it exists.  Will typically be based off some global
 -- or the state of the addon itself.
 local OOC_CLICKS = "Out-of-combat"
+if GetLocale() == "ruRU" then
+	OOC_CLICKS = "Вне-боя"
+end
 
 function Plugin:OnEnable()
     Clique.db.char[OOC_CLICKS] = Clique.db.char[OOC_CLICKS] or {}

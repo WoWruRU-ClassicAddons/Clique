@@ -213,7 +213,7 @@
 						</Anchors>
 						<Layers>
 							<Layer level="OVERLAY">
-								<FontString inherits="GameFontHighlightSmall" text="Click Set:">
+								<FontString inherits="GameFontHighlightSmall" text="Клик установки:">
 									<Anchors>
 										<Anchor point="RIGHT" relativePoint="LEFT">
 											<Offset>
@@ -321,7 +321,7 @@
 							</OnShow>
 						</Scripts>
 					</ScrollFrame>
-					<Button name="CliqueButtonDelete" inherits="CliqueButtonTemplate" text="Delete">
+					<Button name="CliqueButtonDelete" inherits="CliqueButtonTemplate" text="Удалить">
 						<Anchors>
 							<Anchor point="BOTTOMLEFT">
 								<Offset>
@@ -330,7 +330,7 @@
 							</Anchor>
 						</Anchors>
 					</Button>
-					<Button name="CliqueButtonMax" inherits="CliqueButtonTemplate" text="Max">
+					<Button name="CliqueButtonMax" inherits="CliqueButtonTemplate" text="Макс.">
 						<Anchors>
 							<Anchor point="TOPRIGHT" relativeTo="CliqueButtonDelete" relativePoint="TOPLEFT">
 								<Offset>
@@ -339,7 +339,7 @@
 							</Anchor>
 						</Anchors>
 					</Button>
-					<Button name="CliqueButtonNew" inherits="CliqueButtonTemplate" text="New">
+					<Button name="CliqueButtonNew" inherits="CliqueButtonTemplate" text="Новый">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="CliqueButtonDelete" relativePoint="TOPRIGHT">
 								<Offset>
@@ -348,7 +348,7 @@
 							</Anchor>
 						</Anchors>
 					</Button>
-					<Button name="CliqueButtonEdit" inherits="CliqueButtonTemplate" text="Edit">
+					<Button name="CliqueButtonEdit" inherits="CliqueButtonTemplate" text="Редакт.">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="CliqueButtonNew" relativePoint="TOPRIGHT">
 								<Offset>
@@ -357,7 +357,7 @@
 							</Anchor>
 						</Anchors>
 					</Button>
-					<Button name="CliqueButtonOk" inherits="CliqueButtonTemplate" text="Ok">
+					<Button name="CliqueButtonOk" inherits="CliqueButtonTemplate" text="ОК">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="CliqueButtonEdit" relativePoint="TOPRIGHT">
 								<Offset>
@@ -366,7 +366,7 @@
 							</Anchor>
 						</Anchors>
 					</Button>
-					<Button name="CliqueButtonHelp" inherits="CliqueButtonTemplate" text="Help">
+					<Button name="CliqueButtonHelp" inherits="CliqueButtonTemplate" text="Помощь">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="CliqueButtonOk" relativePoint="TOPRIGHT">
 								<Offset>
@@ -388,7 +388,7 @@
 				</Anchors>
 				<Layers>
 					<Layer level="ARTWORK">
-						<FontString name="CliqueEditHint" inherits="SubSpellFont" text="Use a click combo above to change its click cast.">
+						<FontString name="CliqueEditHint" inherits="SubSpellFont" text="Используйте двойной щелчок, чтобы изменить клик-применение">
 							<Size>
 								<AbsDimension x="351" y="16"/>
 							</Size>
@@ -556,7 +556,7 @@
 						</Scripts>
 						<Layers>
 							<Layer level="BACKGROUND">
-								<FontString name="CliqueNameLabel" inherits="GameFontNormal" justifyH="LEFT" text="Name:">
+								<FontString name="CliqueNameLabel" inherits="GameFontNormal" justifyH="LEFT" text="Имя:">
 									<Anchors>
 										<Anchor point="LEFT">
 											<Offset>
@@ -603,7 +603,7 @@
 						<TextInsets left="2" right="10" top="0" bottom="2"/>		
 					</EditBox>
 
-					<Button name="CliqueButtonSave" inherits="CliqueButtonTemplate" text="Save">
+					<Button name="CliqueButtonSave" inherits="CliqueButtonTemplate" text="Сохр.">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="CliqueButtonDelete" relativePoint="TOPRIGHT">
 								<Offset>
@@ -612,7 +612,7 @@
 							</Anchor>
 						</Anchors>
 					</Button>
-					<Button name="CliqueButtonCancel" inherits="CliqueButtonTemplate" text="Cancel">
+					<Button name="CliqueButtonCancel" inherits="CliqueButtonTemplate" text="Отмена">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="CliqueButtonSave" relativePoint="TOPRIGHT">
 								<Offset>
@@ -768,7 +768,7 @@
 				</Anchors>
 				<Layers>
 					<Layer level="ARTWORK">
-						<FontString name="CliqueEditHint" inherits="SubSpellFont" text="Use a click combo above to change its click cast.">
+						<FontString name="CliqueEditHint" inherits="SubSpellFont" text="Используйте двойной щелчок, чтобы изменить клик-применение.">
 							<Size>
 								<AbsDimension x="351" y="16"/>
 							</Size>

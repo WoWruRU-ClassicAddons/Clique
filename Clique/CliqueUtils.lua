@@ -71,6 +71,15 @@ local dual_lookup = {
 ----------------------------------------------------------------------------------]]
 
 function Clique:RegUtilFuncs()
+	if GetLocale() == "ruRU" then
+    self:RegisterCustomFunction("Clique:CastSpell(\"spell\")", "Clique:CastSpell(\"spell\")", "Применить заклинание на \"Clique.unit\" не меняя цели")
+    self:RegisterCustomFunction("Clique:IsBuffActive(\"buff\")", "Clique:IsBuffActive(\"buff\")", "Проверяет активность положительного эффекта или дебаффа на \"Clique.unit\"")
+    self:RegisterCustomFunction("Clique:UnitMenu()", "Clique:UnitMenu()", "Всплывающее меню на \"Clique.unit\"")
+    self:RegisterCustomFunction("Clique:CureAny()", "Clique:CureAny()", "Попытки вылечить любые недуги на \"Clique.unit\"")
+    self:RegisterCustomFunction("Clique:NewSpell(\"spell\", \"buff\")", "Clique:NewSpell(\"spell\", \"buff\")", "Применяет способность если положительный эффект от нее еще НЕ находиться на цели.")
+    self:RegisterCustomFunction("Clique:TargetUnit()", "Clique:TargetUnit()", "Взятие в цель единицы (существа) по которой вы щелкнули.")
+    self:RegisterCustomFunction("Clique:AssistUnit()", "Clique:AssistUnit()", "Помощь единице (существу), по которой вы щелкнули.")
+else
     self:RegisterCustomFunction("Clique:CastSpell(\"spell\")", "Clique:CastSpell(\"spell\")", "Casts a spell on Clique.unit without changing targets")
     self:RegisterCustomFunction("Clique:IsBuffActive(\"buff\")", "Clique:IsBuffActive(\"buff\")", "Checks whether a buff or debuff is active on Clique.unit")
     self:RegisterCustomFunction("Clique:UnitMenu()", "Clique:UnitMenu()", "Pops up the unit menu for Clique.unit")
@@ -78,6 +87,8 @@ function Clique:RegUtilFuncs()
     self:RegisterCustomFunction("Clique:NewSpell(\"spell\", \"buff\")", "Clique:NewSpell(\"spell\", \"buff\")", "Casts a spell if a given buff is NOT on a target")
     self:RegisterCustomFunction("Clique:TargetUnit()", "Clique:TargetUnit()", "Targets the unit you clicked on.")
     self:RegisterCustomFunction("Clique:AssistUnit()", "Clique:AssistUnit()", "Assists the unit you clicked on.")
+
+	end
 end    
 
 --[[---------------------------------------------------------------------------------
